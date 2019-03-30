@@ -1,7 +1,7 @@
 {
   "name": "new-hope-ui",
   "description": "new hope ui",
-  "version": "1.0.1",
+  "version": "0.1.1",
   "author": "ghost <454201948@qq.com>",
   "license": "MIT",
   "private": false,
@@ -16,6 +16,7 @@
     "build:modules": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./webpack.config.modules "
   },
   "dependencies": {
+    "animated-number-vue": "^0.1.4",
     "vue": "^2.5.11"
   },
   "browserslist": [
