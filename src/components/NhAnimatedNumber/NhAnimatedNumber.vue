@@ -1,17 +1,18 @@
 <template>
-  <div class="animated-number-wrapper">
+  <div class="nh-animated-number">
     <animated-number
       :value="value"
       :formatValue="formatValue"
       :duration="duration"
       :easing="easing"
+      v-bind="$attrs"
     />
   </div>
 </template>
 <script>
 import AnimatedNumber from "animated-number-vue";
-
 export default {
+  name: 'nh-animated-number',
   components: {
     AnimatedNumber
   },
@@ -39,6 +40,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .animated-number-wrapper {
-  display: inline;
+  display: inline-block;
 }
 </style>
