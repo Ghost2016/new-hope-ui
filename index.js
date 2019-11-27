@@ -3,7 +3,10 @@
 let componentsPath = './src/components/'
 import Test from './src/components/Test.vue'
 import NhAnimatedNumber from './src/components/NhAnimatedNumber/NhAnimatedNumber.vue'
+import NhRow from './src/components/NhRow/NhRow.vue'
+
 export {
   Test,
-  NhAnimatedNumber
+  NhAnimatedNumber,
+  NhRow
 }
