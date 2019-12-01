@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "build:modules": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./webpack.config.modules "
+    "build:modules": "cross-env NODE_ENV=production webpack --progress --hide-modules --config ./webpack.config.modules ",
+    "build:sass": "sass src/styles/index.scss src/styles/build/index.css"
   },
   "dependencies": {
     "animated-number-vue": "^0.1.4",
