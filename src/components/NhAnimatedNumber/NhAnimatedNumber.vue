@@ -12,7 +12,7 @@
 <script>
 import AnimatedNumber from "animated-number-vue";
 export default {
-  name: 'nh-animated-number',
+  name: 'NhAnimatedNumber',
   components: {
     AnimatedNumber
   },

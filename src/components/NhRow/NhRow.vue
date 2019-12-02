@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-  name: 'nh-row',
+  name: 'NhRow',
   props: {
     // 栅格间隔
     gutter: {
@@ -51,6 +51,3 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
-
-</style>
