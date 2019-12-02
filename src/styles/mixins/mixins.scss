@@ -4,9 +4,11 @@
 /* BEM
  -------------------------- */
  @mixin b($block) {
+  // !global声明为全局变量
   $B: $namespace+'-'+$block !global;
-
+  // #{}为变量的值
   .#{$B} {
+    // 获取传入的内容
     @content;
   }
 }
@@ -15,15 +17,13 @@
   $E: $element !global;
   $selector: &;
   $currentSelector: "";
+  // 遍历其中的值
   @each $unit in $element {
     $currentSelector: #{$currentSelector + "." + $B + $element-separator + $unit + ","};
   }
-  // @at-root {
-  //   #{$currentSelector} {
-  //     @content;
-  //   }
-  // }
+  // 如果是特殊的网结构，详细看function.scss
   @if hitAllSpecialNestRule($selector) {
+    // 放置到最外层
     @at-root {
       #{$selector} {
         #{$currentSelector} {
@@ -36,6 +36,20 @@
       #{$currentSelector} {
         @content;
       }
+    }
+  }
+}
+
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $modifier {
+    $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ","};
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
     }
   }
 }
