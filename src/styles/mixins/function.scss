@@ -2,12 +2,13 @@
 
 /* BEM support Func
  -------------------------- */
+// 把selector转成String
 @function selectorToString($selector) {
   $selector: inspect($selector);
   $selector: str-slice($selector, 2, -2);
   @return $selector;
 }
-
+// 是否包含modifier
 @function containsModifier($selector) {
   $selector: selectorToString($selector);
 
@@ -17,7 +18,7 @@
     @return false;
   }
 }
-
+// 是否包含when标志
 @function containWhenFlag($selector) {
   $selector: selectorToString($selector);
 
@@ -27,7 +28,7 @@
     @return false
   }
 }
-
+// 是否包含了伪类元素
 @function containPseudoClass($selector) {
   $selector: selectorToString($selector);
 
