@@ -1,0 +1,10 @@
+@import "./common/var.scss";
+@import "./mixins/utils.scss";
+@import "./mixins/mixins.scss";
+
+@include b(animated-number) {
+  position: relative;
+  @include e(wrapper) {
+    display: inline-block;
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="nh-animated-number">
+  <div class="nh-animated-number__wrapper">
     <animated-number
       :value="value"
       :formatValue="formatValue"
@@ -38,8 +38,3 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-.animated-number-wrapper {
-  display: inline-block;
-}
-</style>
