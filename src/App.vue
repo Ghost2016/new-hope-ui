@@ -1,16 +1,11 @@
 <template>
   <div id="app">
-    <test :msg="msg"></test>
   </div>
 </template>
 
 <script>
-import { Test } from '../dist/new-hope-ui.js'
 export default {
-  name: 'app',
-  components: {
-    Test
-  },
+  name: 'App',
   data () {
     return {
       msg: 'hello world!'
@@ -27,23 +22,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
 }
 </style>
