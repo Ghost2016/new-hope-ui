@@ -3,7 +3,7 @@
     v-bind="$attrs"
     v-bind:is="tag"
     class="nh-row" 
-    :class="[`justify-${justify} align-${align}`]"
+    :class="[`is-justify-${justify} is-align-${align} ${(this.type === 'flex' && 'nh-row--flex')}`]"
     :style="style">
     <slot></slot>
   </component>
