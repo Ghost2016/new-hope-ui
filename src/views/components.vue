@@ -6,16 +6,17 @@
     </div>
     <div>
       <p>NhRow组件:</p>
-      <nh-row tag="a">这是row</nh-row>
+      <row-template></row-template>
     </div>
   </div>
 </template>
 <script>
 import { NhAnimatedNumber, NhRow  } from '../../index.js'
+import RowTemplate from './template/row'
 export default {
   components: {
     NhAnimatedNumber,
-    NhRow
+    RowTemplate
   }
 }
 </script>
